@@ -1,0 +1,13 @@
+<template name="findSelectCity">
+    <view class="find-advisor-wrapper" >
+        <view class="find-advisor-mask" catchtap="hideFindAdvisorBox"></view>
+        <scroll-view scroll-y="true" class="find-select-cityBox">
+            <view class="find-selectAdvisor-item">
+                <view class="find-selectAdvisor-border">不限城市</view>    
+            </view>
+            <view class="find-selectAdvisor-item">
+                <view class="find-selectAdvisor-border">北京市</view>
+            </view>   
+        </scroll-view>
+    </view>
+</template>

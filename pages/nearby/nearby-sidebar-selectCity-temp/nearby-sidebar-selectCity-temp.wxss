@@ -1,0 +1,36 @@
+
+.find-advisor-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left:0%;
+}
+.find-select-cityBox{
+    width: 70%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0rpx;
+    right: 0rpx;
+
+}
+.find-advisor-mask{
+    background: #000;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+
+.find-selectAdvisor-item{
+    height: 120rpx;
+    line-height: 120rpx;
+    width: 100%;
+    color: #000;
+    font-size: 28rpx;
+    text-indent: 40rpx;
+}
+.find-selectAdvisor-border{
+    border-bottom:1rpx solid #d3d3d4;
+    margin:0 30rpx;
+}

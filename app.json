@@ -1,12 +1,13 @@
 {
   "pages":[
+    "pages/me/me",
     "pages/nearby/nearby",
     "pages/activity/activity",
     "pages/userSettings/userSettings",
     "pages/selectCartPage/selectCartPage",
     "pages/index/index",
-    "pages/login/login",
-    "pages/me/me"
+    "pages/login/login"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,11 +1,14 @@
+<import src="nearby-sidebar-selectCity-temp/nearby-sidebar-selectCity-temp.wxml"/>
+
+
 <view class="nearby-container">
     <view class="nearby-filter-box">
-        <view class="nearby-filter-item">
+        <view class="nearby-filter-item" catchtap="showFindAdvisorBox">
             <view class="nearby-filter-msg">城市
                 <image class="nearby-arrow-icon" src="/images/icon/arrow-icon.png"></image>
             </view>
         </view>
-        <view class="nearby-filter-item">
+        <view class="nearby-filter-item" catchtap="showSelectCart">
             <view class="nearby-filter-msg border-left-line">品牌
                  <image class="nearby-arrow-icon" src="/images/icon/arrow-icon.png"></image>
             </view>
@@ -15,13 +18,112 @@
     <!--找顾问列表-->
     <view class="find-advisor-list">
         <view class="find-advisor-item">
-            <image src="/images/icon/avatar.png"></image>
+            <image class="find-advisor-avatar" src="/images/icon/avatar.png"></image>
             <text class="find-advisor-name">唐东方</text>
-            <image src="/images/icon/man-icon.png"></image>
+            <image class="find-advisor-sex" src="/images/icon/man-icon.png"></image>
             <text class="find-advisor-recommend">推荐</text>
             <image class="find-advisor-cart" src="/images/banner/8.png"></image>
-            <text class="find-advisor-recommend">距我0.1km</text>
-            <image class="tel-icon" src="/images/icon/tel-icon.png"></image>
+            <text class="find-advisor-fromMe">距我<text class="fromMe-color">0.1</text>km</text>
+            <image class="find-tel-icon" src="/images/icon/tel-icon.png"></image>
         </view>
     </view>
+
+    <!--选择城市组件-->
+    <view class="toggle-City-content" animation="{{findAdvisorAnimation}}">
+        <template is="findSelectCity"/>
+    </view>
+
+    <!--选择品牌组件-->
+    <view class="toggle-Cart-content" animation="{{findSelectCartAnimation}}">
+        <view class="find-cart-mask" catchtap="hideSelectCart"></view>
+        <view class="find-selectCart-wrapper">
+            <view class="find-selectCart-item find-selectCart-active" catchtap="showSelectModel">
+                全部
+            </view>
+            <view class="find-selectCart-item">
+                奥迪
+            </view>
+            <view class="find-selectCart-item">
+                宝马
+            </view>
+            <view class="find-selectCart-item">
+                奥迪
+            </view>
+            <view class="find-selectCart-item">
+                宝马
+            </view>
+            <view class="find-selectCart-item">
+                奥迪
+            </view>
+            <view class="find-selectCart-item">
+                宝马
+            </view>
+            <view class="find-selectCart-item">
+                奥迪
+            </view>
+            <view class="find-selectCart-item">
+                宝马
+            </view>
+            <view class="find-selectCart-item">
+                奥迪
+            </view>
+            <view class="find-selectCart-item">
+                宝马
+            </view>
+            <view class="find-selectCart-item">
+                奥迪
+            </view>
+            <view class="find-selectCart-item">
+                宝马
+            </view>
+            <view class="find-selectCart-item">
+                奥迪
+            </view>
+            <view class="find-selectCart-item">
+                宝马
+            </view>
+            <view class="find-selectCart-item">
+                奥迪
+            </view>
+            <view class="find-selectCart-item">
+                宝马
+            </view>
+            <view class="find-selectCart-item">
+                奥迪
+            </view>
+            <view class="find-selectCart-item">
+                宝马
+            </view>
+            <view class="find-selectCart-item">
+                奥迪
+            </view>
+            <view class="find-selectCart-item">
+                宝马
+            </view>
+            <view class="find-selectCart-item">
+                奥迪
+            </view>
+            <view class="find-selectCart-item">
+                宝马
+            </view>
+        </view>
+
+        <view class="find-car-model-container" animation="{{findSelectModelAnimation}}">
+            <view class="find-car-model-mask" catchtap="hideSelectModel"></view>
+            <view class="find-car-model-wrapper">
+                <view class="find-scroll-box">
+                    <view class="find-selectCart-item find-selectCart-active">
+                        华晨宝马
+                    </view>
+                    <view class="find-selectCart-item">
+                        进口宝马M系
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    
+
+
+
 </view>
