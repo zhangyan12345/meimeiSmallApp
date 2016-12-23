@@ -1,0 +1,9 @@
+<!--选择城市的弹窗-->
+<template name="selectSex">
+    <view  catchtap="hideSexBox" class="select-sex-mask"></view>
+    <view class="select-wrapper">
+        <block wx:for="{{sex}}">
+            <view data-sexId="{{item.sexId}}" class="select-sex-item" catchtap="selectSex">{{item.sexItem}}</view>
+        </block>
+    </view>
+</template>

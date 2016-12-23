@@ -1,0 +1,31 @@
+<import src="index-item-template/index-item.wxml"/>
+<import src="home-middle-box/home-middle-box.wxml"/>
+<import src="select-city/select-city.wxml"/>
+<import src="home-default/home-default.wxml"/>
+<import src="home-banner/home-banner.wxml"/>
+<!--轮播图-->
+<view class="container">
+    <template is="homeBanner" data="{{homeBanner}}"/><!--引入首页轮播模块-->
+    <template is="homeMiddleBox"/><!--首页找顾问等部分-->
+    <view class="home-line-box">
+            <image src="/images/icon/home-line.png" class="home-line"></image>
+            <text class="home-line">我要买的车</text>
+            <image src="/images/icon/home-line.png" class="home-line"></image>
+    </view>
+
+    <!--模块-->
+        <!--<view class="home-brand-car">
+            <template is="indexItem"/>
+            <template is="indexItem"/>
+        </view>-->
+    <template is="homeDefault" data="{{appHotCart}}"/>
+
+    <!--首页选择城市-->
+    <block wx:for="{{cityData}}">
+        <view catchtap="showCityBox" class="home-city" data-cityId="{{item.cityNo}}" wx:if="{{item.cityNo == defaultCity}}">{{item.city}}</view>
+    </block>
+    <view class="content" animation="{{animationData}}">
+        <template is="selectCity" data="{{cityData}}"/><!--选择城市组件-->
+    </view>
+</view>
+

@@ -1,0 +1,26 @@
+<view class="container">
+    <image class="mmlogin" src="../../images/img/meimei_logo.png"></image>
+
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="back-icon" wx:if="{{flag}}" bindtap="closeTap"  >×</view>
+    <text class="register" bindtap="registerTap"  wx:if="{{!flag}}">注册</text>
+
+    <view class="mmlogin-section">
+        <input type="number" class="mmlogin-user-tel" maxlength="11" name="tel" placeholder="请输入手机号"   bindinput="listenerPhoneInput"/>
+    </view>
+    <view class="mmlogin-section password-box">
+        <input class="mmlogin-yz-code" name="password" placeholder="请输入密码" />
+        <!--<text class="get-yz-code">获取验证码</text> -->
+    </view>
+    <view class="mmlogin-section yz-box" wx:if="{{flag}}">
+        <input class="mmlogin-yz-code" name="code" placeholder="请输入密码" />
+        <input class="get-yz-code" disabled="disabled" bindtap="getRegisterCode" value="获取验证码"  />
+    </view>
+
+    <view class="mmlogin-btn">
+        <button  wx:if="{{!flag}}" formType="submit">{{defaultMsg}}</button> 
+        <button  wx:if="{{flag}}" formType="submit">{{defaultMsg}}</button> 
+    </view>
+</form>
+</view>

@@ -1,0 +1,10 @@
+<template name="selectCity">  
+        <view class="city-wrapper">
+        <view class="city-close">
+                <image class="city-close-icon" bindtap="hideCityBox" src="../../images/icon/close-icon.png"></image>
+        </view>
+        </view>
+        <block wx:for="{{cityData}}">
+                <view class="city-item" catchtap="selcetedCity" data-cityId="{{item.cityNo}}">{{item.city}}</view>
+        </block>
+</template>

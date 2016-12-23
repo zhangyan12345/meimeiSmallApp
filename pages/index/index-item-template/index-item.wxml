@@ -1,0 +1,26 @@
+<template name="indexItem">
+    <view class="car-brand-box">
+        <image class="car-brand" src="/images/banner/8.png"></image>
+        <text class="car-brand-name">车车车火车火车火车</text>
+        <image class="arrow-left-icon" src="/images/icon/arrow-left-icon.png"></image>
+    </view>
+
+    <view class="car-brand-people">
+        <view class="car-brand-item">
+            <image class="car-avatar" src="/images/icon/avatar.png"></image>
+            <text class="car-avatar-name">大的</text>
+        </view>
+        <view class="car-brand-item">
+            <image class="car-avatar" src="/images/icon/avatar.png"></image>
+            <text class="car-avatar-name">大的</text>
+        </view>
+        <view class="car-brand-item">
+            <image class="car-avatar" src="/images/icon/avatar.png"></image>
+            <text class="car-avatar-name">大的的</text>
+        </view>
+        <view class="car-brand-item more-btn">
+            <text class="car-brand-more">更多</text>
+            <image class="brand-left-icon" src="/images/icon/arrow-left-icon.png"></image>
+        </view>
+    </view>
+</template>

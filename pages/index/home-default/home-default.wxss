@@ -1,0 +1,27 @@
+.home-default{
+    margin:50rpx 0rpx 30rpx 19rpx;
+    height: 460rpx;
+}
+.home-default-item{
+    width: 234rpx;
+    height: 240rpx;
+    background: #fff;
+    font-size: 26rpx;
+    display: inline-block;
+    float:left;
+    border:1rpx solid #efefef;
+}
+
+.default-item-icon{
+    width: 80rpx;
+    height: 80rpx;
+    margin: 50rpx auto 0;
+    display: flex;
+    flex: 1;
+}
+.item-content{
+    display: inline-block;
+    margin: 20rpx auto 0;
+    text-align: center;
+    width: 100%;
+}

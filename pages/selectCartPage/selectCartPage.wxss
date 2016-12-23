@@ -1,0 +1,117 @@
+page{
+    background: #efefef;
+    position: absolute;
+    top: 0rpx;
+    left:0rpx;
+}
+/*禁止滑动设置的类*/
+.overflow{
+    overflow: hidden;
+}
+.page-wrapper{
+    overflow-y:scroll;
+}
+.select-cart-box{
+    width: 100%;
+    height: 100%;
+}
+.select-cart-wrapper{
+    width:100%;
+    overflow-y:scroll;
+}
+.select-big-index,.select-cartType-index{
+    line-height: 50rpx;
+    height: 50rpx;
+    color: #898989;
+    text-indent: 24rpx;
+    font-size: 28rpx;
+}
+.select-cart-item{
+    background: #fff;
+    width: 100%;
+    line-height: 100rpx;
+    height: 100rpx;
+    position: relative;
+}
+.select-cart-icon{
+    width: 70rpx;
+    height: 70rpx;
+    position: absolute;
+    top: 16rpx;
+    left:36rpx;
+}
+.select-cart-name{
+    position: absolute;
+    top: 0rpx;
+    left:150rpx;
+    font-size: 28rpx;
+    color: #000;
+}
+
+.select-cartType-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0rpx;
+    left:100%;
+}
+.select-cartType-mask{
+    background: #000;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0rpx;
+    left:0rpx;
+}
+.select-cartType-sideBar{
+    width: 80%;
+    background: #fff;
+    height: 100%;
+    position: absolute;
+    top:0rpx;
+    right:0rpx;
+}
+
+.select-cartType-index{
+    background: #efefef;
+}
+.select-cartType-item{
+    height: 166rpx;
+    border-bottom: 1rpx solid #c9c3c0;   
+    position: relative;
+}
+.select-cartType-item:last-child{
+     border-bottom:none;
+}
+.select-cartType-icon{
+    width:168rpx;
+    height: 94rpx;
+    position: absolute;
+    left: 35rpx;
+    top: 39rpx;
+}
+.select-cartType-name{
+    color: #383635;
+    position: absolute;
+    top:44rpx;
+    left:230rpx;
+    font-size: 26rpx;
+}
+.select-cartType-price{
+    position: absolute;
+    top:100rpx;
+    left:230rpx;
+    font-size: 24rpx;
+    color: #9fa0a0;
+}
+
+.select-cartType-arrow{
+    width: 58rpx;
+    height: 53rpx;
+    position:fixed;
+    top:50%;
+    margin-top:-25rpx;
+    left:44rpx;
+    display: none;
+}

@@ -1,0 +1,9 @@
+<template name="homeBanner">
+    <swiper indicator-dots="true" autoplay="true" class="swiper">
+        <block wx:for="{{homeBanner}}">
+              <swiper-item class="swiper-item">
+                  <image class="item-image" bindtap="onSwiperItemTap" data-postid="{{item.id}}" src="{{item.image}}"/>
+              </swiper-item> 
+        </block>
+    </swiper>
+</template>

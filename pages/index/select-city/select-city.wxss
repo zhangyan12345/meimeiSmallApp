@@ -1,0 +1,38 @@
+.content{
+    width:100%;
+    background: #e8e9e7;
+    height:100%;
+    display: block;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    overflow-x: hidden;
+}
+.city-item{
+    height: 80rpx;
+    line-height: 80rpx;
+    width:100%;
+    color: #595656;
+    background: #fff;
+    border-bottom:1rpx solid #e6eaeb;
+    padding:0 20rpx;
+}
+.city-wrapper{
+    width:100%;
+    height:110rpx;
+    position: relative;
+}
+.city-close{
+    width:50rpx;
+    height: 50rpx;
+    position: absolute;
+    top: 30rpx;
+    left: 30rpx;
+}
+.city-close-icon{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0rpx;
+    left: 0rpx;
+}

@@ -1,0 +1,72 @@
+.car-brand-box{
+    
+    height: 120rpx;
+    background: #fff;
+    margin: 0 30rpx;
+    margin-top: 24rpx;
+}
+.car-brand{
+    width: 110rpx;
+    height: 110rpx;
+    margin:10rpx 20rpx 0 20rpx;
+    vertical-align: middle;
+}
+.car-brand-name{
+    font-size:32rpx;
+    color:#383635;
+    vertical-align: middle;
+    margin-top: 10rpx;
+    display: inline-block;
+}
+
+.arrow-left-icon{
+    width:45rpx;
+    height: 45rpx;
+    float:right;
+    margin:40rpx 20rpx 0 0; 
+}
+
+.car-brand-people{
+    margin: 8rpx 30rpx 20rpx 30rpx;
+    height: 220rpx;
+    background: #fff;
+    display: flex;
+
+}
+.car-brand-item{
+    flex-direction: row;
+    flex:1;
+    text-align: center;
+    padding-top:30rpx;
+}
+
+.car-avatar{
+    width:108rpx;
+    height: 108rpx;
+    flex-direction: column;
+}
+.car-avatar-name{
+    font-size: 30rpx;
+    flex-direction: column;
+    display: block;
+    text-align: center;
+    width: 128rpx;
+    margin: 0 auto;
+    color: #292626;
+}
+
+.car-brand-more{
+    font-size:32rpx;
+    color: #595757;
+}
+
+.brand-left-icon{
+    width:45rpx;
+    height: 45rpx;
+    float:right;
+    margin:60rpx 20rpx 0 0; 
+}
+
+.more-btn{
+    line-height: 160rpx;
+}

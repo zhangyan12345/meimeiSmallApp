@@ -1,0 +1,13 @@
+<template name="homeMiddleBox">
+    <view class="home-middle-box">
+            <view class="home-middle-item home-item1" catchtap="goFindPeople">
+                <image class="home-middle-con" src="/images/icon/map-icon.png"></image>
+                <text class="home-middle-con">找顾问</text>
+            </view>
+            <view class="home-middle-item home-item2" catchtap="goActivity">
+                <image class="home-middle-con" src="/images/icon/scale-icon.png"></image>
+                <text class="home-middle-con">4S店活动</text>
+            </view>
+    </view>
+
+</template>

@@ -1,0 +1,49 @@
+/**index.wxss**/
+@import "index-item-template/index-item.wxss";
+@import "home-middle-box/home-middle-box.wxss";
+@import "select-city/select-city.wxss";
+@import "home-default/home-default.wxss";
+@import "home-banner/home-banner.wxss";
+
+
+page{
+    background: #efefef;
+}
+
+.home-line-box{
+  width:80%;
+  height:20rpx;
+  display: flex;
+  margin:20rpx auto;
+  
+}
+
+.home-line{
+    height: 4rpx;
+    flex-direction: row;
+    width: 33.3%;
+    text-align: center;
+    font-size: 30rpx;
+    vertical-align: middle;
+    color:#383635;
+}
+
+.home-line-box image{
+   margin-top:20rpx;
+}
+
+
+.home-brand-car{
+    height:460rpx;
+    width:100%;
+    margin-top:40rpx;
+}
+
+.home-city{
+    position: absolute;
+    left:0px;
+    top:0px;
+    padding:18rpx;
+    background:#000;
+    color: #fff;
+}

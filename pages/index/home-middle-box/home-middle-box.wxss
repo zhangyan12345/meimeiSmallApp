@@ -1,0 +1,42 @@
+.home-middle-box{
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+}
+
+.home-middle-item{
+     height:160rpx;
+     line-height:125rpx;
+     flex-direction: row;
+     background: url(../../images/icon/home-tip-shadow.png) no-repeat;
+     background-size: 100% 100%;
+     width:40%;
+     margin:50rpx 0 0 0;
+     text-align: center;
+}
+
+.home-item1{
+    margin-left:8%;
+}
+
+.home-item2{
+    margin-left:4%;
+}
+
+.home-item1 image{
+    width:55rpx;
+    height: 60rpx;
+    margin-right: 20rpx;
+}
+.home-item2 image{
+    width: 55rpx;
+    height: 60rpx;
+    margin-right: 20rpx;
+}
+
+.home-middle-con{
+    flex-direction: row;
+    vertical-align: middle;
+    font-size:30rpx;
+    color:#383635;
+}

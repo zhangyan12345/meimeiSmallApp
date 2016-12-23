@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/nearby/nearby",
+    "pages/activity/activity",
+    "pages/userSettings/userSettings",
+    "pages/selectCartPage/selectCartPage",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/me/me"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "borderStyle":"white",
+    "backgroundColor":"#1c1b1b",
+    "color":"#898989",
+    "selectedColor":"#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"images/icon/home.png",
+      "selectedIconPath":"images/icon/home-selected.png"
+    }, {
+      "pagePath": "pages/nearby/nearby",
+      "text": "附近",
+      "iconPath":"images/icon/nearby.png",
+      "selectedIconPath":"images/icon/nearby-selected.png"
+    }, {
+      "pagePath": "pages/activity/activity",
+      "text": "活动",
+       "iconPath":"images/icon/activity.png",
+      "selectedIconPath":"images/icon/activity-selected.png"
+    }, {
+      "pagePath": "pages/me/me",
+      "text": "我",
+       "iconPath":"images/icon/me.png",
+      "selectedIconPath":"images/icon/me-selected.png"
+    }
+    ]
+  },
+  "debug":false
+}

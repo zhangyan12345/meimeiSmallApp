@@ -1,0 +1,15 @@
+<template name="homeDefault">
+    <view class="home-default">
+        <block wx:for="{{appHotCart}}">
+            <view class="home-default-item">
+                <image class="default-item-icon" src="{{item.image}}"></image>
+                <text class="item-content">{{item.name}}</text>
+            </view>
+        </block>
+        <view class="home-default-item">
+            <image class="default-item-icon" src="/images/banner/more.png"></image>
+            <text class="item-content">更多品牌</text>
+        </view>
+    </view>
+
+</template>

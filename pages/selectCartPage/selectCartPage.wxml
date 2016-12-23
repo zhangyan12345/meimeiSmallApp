@@ -1,0 +1,30 @@
+<view class="select-cart-wrapper">
+    <scroll-view class="select-cart-box {{scrollFlag?'overflow':''}}" scroll-y="true" style="width: 100%">
+        <block wx:for="{{result}}">
+            <view class="select-big-index" wx:if="{{item.arrPy.length != 0}}">{{item.letter}}</view>
+            <block wx:for="{{item.arrPy}}"  wx:for-item="itemName">
+                <view class="select-cart-item" data-cartId="{{itemName.cartId}}" catchtap="selectCartType">
+                    <image src="{{itemName.image}}" class="select-cart-icon"></image>
+                    <text class="select-cart-name">{{itemName.name}}</text>
+                </view>
+            </block>
+        </block>
+    </scroll-view>
+    <scroll-view scroll-y="true" class="select-cartType-box" animation="{{selectCartTypeAnimation}}">
+        <view class="select-cartType-mask" catchtap="hideSelectCartTypeAnimation" style="height:{{setScrollHeight}}">
+            <image class="select-cartType-arrow" src="/images/icon/sideBar-icon.png"></image>
+        </view>
+        <view class="select-cartType-sideBar" style="height:{{setScrollHeight}}">
+                <block wx:for="{{selectCartType}}">
+                    <view class="select-cartType-index" data-cartSubId="{{item.cartSubId}}">{{item.name}}</view>
+                    <block wx:for="{{item.carttype}}" wx:for-item="subItem">
+                        <view class="select-cartType-item" data-cartId="{{subItem.cartTypeId}}" catchtap="getFinalData">
+                            <image src="{{subItem.image}}" class="select-cartType-icon"></image>
+                            <text class="select-cartType-name">{{subItem.carModel}}</text>
+                            <text class="select-cartType-price">指导价:{{subItem.lowprice}}-{{subItem.highprice}}万元</text>
+                        </view>
+                    </block>
+                </block>
+        </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,63 @@
+<import src="select-sex-temp/select-sex-temp.wxml"/>
+
+<view class="user-settings-content">
+    <view class="user-head-box">
+        <view class="user-avatar" catchtap="setPhotoInfo">  
+            <view wx:if="{{imgUrl!=null}}" class="image" style="background:url({{imgUrl}}) no-repeat center;background-size:cover;"></view>
+            <image wx:else src="{{defaultSex=='女'?'/images/img/woman.png':'/images/img/man.png'}}" class="image"></image>
+        </view>
+    </view>
+    <view class="user-setting-item">
+        <text class="user-settings-text">昵称</text>
+        <input type="text" class="user-settings-input" placeholder="快来取个有逼格的昵称"/>
+        <image src="/images/icon/arrow-left-icon.png" class="arrow-left-icon"></image>
+    </view>
+    <view class="user-setting-item" catchtap="showSexBox">
+        <text class="user-settings-text">性别</text>
+        <text class="user-setting-item-msg">{{defaultSex}}</text>
+        <image src="/images/icon/arrow-left-icon.png" class="arrow-left-icon"></image>
+    </view>
+    <view class="user-setting-item" bindtap="showCityBox">
+        <text class="user-settings-text">所在地</text>
+        <text class="user-setting-item-msg">{{provinceArray[provinceIndex]}}{{cityArray[cityIndex]}}</text>
+        <image src="/images/icon/arrow-left-icon.png" class="arrow-left-icon"></image>
+    </view>
+     <view class="user-setting-item">
+        <text class="user-settings-text">输入邀请者的美美身份证</text>
+        <input type="text" class="user-settings-input" placeholder="非必填"/>
+        <image src="/images/icon/arrow-left-icon.png" class="arrow-left-icon"></image>
+    </view>
+    <view class="user-setting-item" catchtap="wantBugCar">
+        <text class="user-settings-text">要买的车</text>
+        <text class="user-setting-getMsg">{{wantCarMsg}}</text>
+        <image src="{{wantCarImage}}" class="user-setting-getImage"></image>
+        <image src="/images/icon/arrow-left-icon.png" class="arrow-left-icon"></image>
+    </view>
+
+    <view class="user-settings-btn">
+         <button formType="submit">完成</button> 
+    </view>
+
+
+    <!--选择男女弹窗-->
+     <view class="select-sex-box" animation="{{animation}}">
+        <template is="selectSex" data="{{sex}}"/>
+    </view>
+
+    <!--选择城市弹窗-->
+    <view class="scb"  animation="{{cityAnimation}}">
+        <view class="select-city-box">
+                <view class="select-city-item">
+                    <picker bindchange="bindProvinceChange" value="{{provinceIndex}}" range="{{provinceArray}}">
+                            <view class="section__title">省份选择器:{{provinceArray[provinceIndex]}}</view>
+                    </picker>
+                </view>
+                <view class="select-city-item" bindtap="click">
+                    <picker bindchange="bindCityChange" value="{{cityIndex}}" range="{{cityArray}}">
+                        <view class="section__title">市区选择器:{{cityArray[cityIndex]}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="select-city-mask"></view>
+    </view>
+</view>

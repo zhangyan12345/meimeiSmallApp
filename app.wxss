@@ -1,0 +1,26 @@
+/**app.wxss**/
+/**app.wxss**/
+
+.font-shallow{
+    color:#999999;
+}
+
+body{
+    color:#999999;
+}
+
+text{
+    font-size:24rpx;
+    font-family:Microsoft YaHei;
+    color: #666;
+}
+
+input{
+    font-family:'Microsoft YaHei','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+page{
+    margin-bottom:60rpx;
+    overflow-x: hidden;
+    font-family:'Microsoft YaHei';
+}

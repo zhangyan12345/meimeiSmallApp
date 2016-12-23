@@ -1,0 +1,27 @@
+<view class="nearby-container">
+    <view class="nearby-filter-box">
+        <view class="nearby-filter-item">
+            <view class="nearby-filter-msg">城市
+                <image class="nearby-arrow-icon" src="/images/icon/arrow-icon.png"></image>
+            </view>
+        </view>
+        <view class="nearby-filter-item">
+            <view class="nearby-filter-msg border-left-line">品牌
+                 <image class="nearby-arrow-icon" src="/images/icon/arrow-icon.png"></image>
+            </view>
+        </view>
+    </view>
+
+    <!--找顾问列表-->
+    <view class="find-advisor-list">
+        <view class="find-advisor-item">
+            <image src="/images/icon/avatar.png"></image>
+            <text class="find-advisor-name">唐东方</text>
+            <image src="/images/icon/man-icon.png"></image>
+            <text class="find-advisor-recommend">推荐</text>
+            <image class="find-advisor-cart" src="/images/banner/8.png"></image>
+            <text class="find-advisor-recommend">距我0.1km</text>
+            <image class="tel-icon" src="/images/icon/tel-icon.png"></image>
+        </view>
+    </view>
+</view>
